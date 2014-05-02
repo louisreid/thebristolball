@@ -14,7 +14,8 @@
   </head>
   <body>
     <h3>the bristol ball</h3>
-    <h6>coming soon.</h6>
+    <h5>30 05 14<h5/>
+    <h6>site coming sunday morning.</h6>
   </body>
   <script src='//localhost:3000/socket.io/socket.io.js'></script>
   <script src='//localhost:3001/client/browser-sync-client.min.js'></script>
