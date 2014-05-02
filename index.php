@@ -13,7 +13,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <h1>the bristol ball</h1>
+    <h3>the bristol ball</h3>
     <h6>coming soon.</h6>
   </body>
   <script src='//localhost:3000/socket.io/socket.io.js'></script>
