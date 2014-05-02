@@ -13,9 +13,8 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    the
-    bristol
-    ball
+    <h1>the bristol ball</h1>
+    <h6>coming soon.</h6>
   </body>
   <script src='//localhost:3000/socket.io/socket.io.js'></script>
   <script src='//localhost:3001/client/browser-sync-client.min.js'></script>
