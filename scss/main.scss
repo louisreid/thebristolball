@@ -1,6 +1,63 @@
-body {
-    font-family: 'Helvetica', Arial, sans;
-    font-size:4em;
-    font-weight: 800;
-    text-transform: uppercase;
-}
+/*------------------------------------*\
+    MIRRORS OR MOVERS 
+\*------------------------------------*/ 
+
+/**
+ * The SCSS in this project is written in an Object Orientated manner (OOCSS),
+ * https://github.com/stubbornella/oocss/wiki and follows some Scalable and
+ * Modular Architecture for CSS (SMACSS) principles.
+ */
+
+
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+
+/**
+ *
+ * The stylesheet is laid out into roughly five rule sets:
+ * 1 - Base rules
+ * 2 - Layout rules
+ * 3 - Module rules
+ * 4 - State rules
+ * 5 - Theme rules
+ *
+ */
+
+
+/*------------------------------------*\
+    1. BASE RULES
+\*------------------------------------*/
+
+// @import "base/temp.scss";
+@import "base/reset.scss";
+@import "base/vars.scss";
+@import "base/imports.scss";
+@import "base/mixins.scss";
+@import "base/extends.scss";
+@import "base/elements.scss";
+@import "base/typography.scss";
+@import "base/base.scss";
+
+
+/*------------------------------------*\
+    2. LAYOUT RULES
+\*------------------------------------*/
+
+@import "layout/page.scss";
+
+
+/*------------------------------------*\
+    3. MODULE RULES
+\*------------------------------------*/
+
+@import "module/tickets.scss";
+
+
+/*------------------------------------*\
+    4. STATE RULES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    5. THEME RULES
+\*------------------------------------*/

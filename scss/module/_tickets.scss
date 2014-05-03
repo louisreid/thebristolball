@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    MODULE/TICKETS.SCSS
+\*------------------------------------*/
+
+.tickets {
+    @extend .page-constrained;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: $white;
+    @include breakpoint(tab){
+        max-width: 600px;
+    }
+    @include breakpoint(mob){
+        width: 100%;
+    }
+}
+
+.tickets__wrapper {
+    background-color: red;
+}

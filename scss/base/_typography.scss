@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    BASE/TYPOGRAPHY.SCSS
+\*------------------------------------*/
+
+.font-main {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.font-header {
+    font-family: 'Abril Fatface', Georgia, serif;   
+}
+
+
+h1, h2 {
+    @include .font-header;
+}

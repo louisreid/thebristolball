@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    LAYOUT/PAGE.SCSS
+\*------------------------------------*/
+
+.wrapper {
+    width: 100%;
+}
+
+.page-constrained {
+    margin: 0 auto;    
+    padding: $gutter-std;
+    max-width: $site-max-width;
+    @include breakpoint(mob){
+        padding: $gutter-mob;
+    }
+}
+
+.site-header {
+    position: relative;
+    width: 300px;
+}

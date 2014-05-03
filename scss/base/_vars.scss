@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    BASE/VARS.SCSS
+\*------------------------------------*/
+
+
+/**
+ * Colour Variables
+ */
+$black: #111;
+$white: white;
+
+/**
+ * Size Variables
+ */
+$base-unit: 16px;
+$site-max-width: 1025px;
+
+/**
+ * Font Variables
+ */
+$font-size: $base-unit;
+$font-size--tab: 0.9;
+$font-size--mob: 0.7;
+
+/**
+ * Spacing Variables
+ */
+$gutter-std: $base-unit*1.25;
+$gutter-mob: $gutter-std*0.5;
