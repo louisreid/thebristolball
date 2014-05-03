@@ -23,7 +23,4 @@
     <nav class="nav-below">
         <p>POSTED <?php the_time('m/j/y g:i A') ?> IN <?php the_category(', ') ?></p>
     </nav> 
-  </body>
-  <script src='//localhost:3000/socket.io/socket.io.js'></script>
-  <script src='//localhost:3001/client/browser-sync-client.min.js'></script>
-</html>
+
