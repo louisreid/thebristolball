@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    MODULE/TITLE.SCSS
+\*------------------------------------*/
+
+
+.homepage__wrapper {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.homepage {
+    margin: 0 auto;
+
+
+    text-align: center;
+    color: $black;
+
+    h1 {
+        @extend .visuallyhidden;
+    }
+    
+    .title--the {
+        @include font-sizing(1.8*$font-size);
+        @include breakpoint(mob){
+            display: block;
+            margin-bottom: -0.4*$base-unit;
+        }
+    }
+    .title--summer {
+        @include font-sizing(3.3*$font-size);
+        line-height: 0.6em;
+    }
+    .title--masquerade {
+        @include font-sizing(5*$font-size);
+        line-height: 0.6em;
+    }
+    .title--ball {
+        @include font-sizing(1*$font-size);
+        line-height: 2em;
+    }
+    .title--date {
+        @include font-sizing(6*$font-size);
+        line-height: 2em;
+    }
+
+    @include breakpoint(mob){
+        width: 100%;
+    }
+
+
+}
+
+.homepage__links {
+    @extend .cf;
+    list-style-type: none;
+    display: inline-block;
+    li {
+        padding: 2*$gutter-std 0 0 4*$gutter-std;
+        margin: 0;
+        text-align: center;
+        float: left;
+        display: block;
+        @include font-sizing(2*$font-size);
+        a, a:active, a:visited {
+            color: $black;
+            transition: color 0.5s;
+        }
+        a:hover {
+            color: $silver;
+        }
+        h4 {
+            @include font-sizing(1*$font-size);
+        }
+
+        @include breakpoint(tab){
+            padding-left: 2*$gutter-std;
+        }
+
+        @include breakpoint(mob){
+            padding: 2*$base-unit 0 0 0;
+            float: none;
+            font-size: 1.6*$font-size;
+        }
+    }
+    li:first-child {
+        padding-left: 0;
+    }
+}
+
+.link-trailer, .link-more-info {
+    @include breakpoint(mob){
+        display: none;
+    }
+}
+
+.link-trailer--mob, .link-more-info--mob {
+    display: none;
+    @include breakpoint(mob){
+        display: inline;
+    }
+}

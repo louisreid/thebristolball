@@ -16,5 +16,11 @@
 }
 
 .tickets__wrapper {
-    background-color: red;
+    background-image: url('../img/video.jpg');
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    
+    
 }

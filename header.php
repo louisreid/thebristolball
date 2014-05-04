@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.fancybox.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js"></script>
     <?php wp_head(); ?>

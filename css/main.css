@@ -39,6 +39,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 /* line 34, ../scss/base/_reset.scss */
 article,
 aside,
@@ -504,6 +505,13 @@ h1, h2, h3, h4, h5, h6 {
  * Spacing Variables
  */
 /*------------------------------------*\
+    BASE/IMPORTS.SCSS
+\*------------------------------------*/
+/**
+ * Google Webfonts
+ */
+/* Abril Fatface */
+/*------------------------------------*\
     BASE/MIXINS.SCSS
 \*------------------------------------*/
 /**
@@ -520,8 +528,9 @@ h1, h2, h3, h4, h5, h6 {
  * thanks to: nicolasgallagher.com
  */
 /* line 11, ../scss/base/_extends.scss */
-.cf:before,
-.cf:after {
+.cf:before, .homepage__links:before,
+.cf:after,
+.homepage__links:after {
   content: " ";
   /* 1 */
   display: table;
@@ -529,7 +538,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 16, ../scss/base/_extends.scss */
-.cf:after {
+.cf:after, .homepage__links:after {
   clear: both;
 }
 
@@ -538,8 +547,23 @@ h1, h2, h3, h4, h5, h6 {
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 24, ../scss/base/_extends.scss */
-.cf {
+.cf, .homepage__links {
   *zoom: 1;
+}
+
+/**
+ * Visually Hidden from H5 BP
+ */
+/* line 32, ../scss/base/_extends.scss */
+.visuallyhidden, .homepage h1 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 /*------------------------------------*\
@@ -551,6 +575,16 @@ h1, h2, h3, h4, h5, h6 {
 /* line 5, ../scss/base/_typography.scss */
 .font-main, body {
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+/* line 9, ../scss/base/_typography.scss */
+.font-header, h1, h2, h3, h4 {
+  font-family: 'Abril Fatface', Georgia, serif;
+}
+
+/* line 14, ../scss/base/_typography.scss */
+h1, h2, h3, h4 {
+  font-weight: 300;
 }
 
 /*------------------------------------*\
@@ -607,7 +641,269 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 18, ../scss/module/_tickets.scss */
 .tickets__wrapper {
-  background-color: red;
+  background-image: url("../img/video.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+/*------------------------------------*\
+    BASE/BIG-VIDEO.SCSS
+\*------------------------------------*/
+/* line 5, ../scss/module/_big-video.scss */
+#big-video-wrap {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 14, ../scss/module/_big-video.scss */
+#big-video-vid {
+  position: absolute;
+}
+
+/* line 18, ../scss/module/_big-video.scss */
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* line 25, ../scss/module/_big-video.scss */
+.screen {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 33, ../scss/module/_big-video.scss */
+.big-image {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*------------------------------------*\
+    MODULE/TITLE.SCSS
+\*------------------------------------*/
+/* line 6, ../scss/module/_homepage.scss */
+.homepage__wrapper {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* line 14, ../scss/module/_homepage.scss */
+.homepage {
+  margin: 0 auto;
+  text-align: center;
+  color: #111111;
+}
+/* line 25, ../scss/module/_homepage.scss */
+.homepage .title--the {
+  font-size: 28.8px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 25, ../scss/module/_homepage.scss */
+  .homepage .title--the {
+    font-size: 25.92px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 25, ../scss/module/_homepage.scss */
+  .homepage .title--the {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 25, ../scss/module/_homepage.scss */
+  .homepage .title--the {
+    display: block;
+    margin-bottom: -6.4px;
+  }
+}
+/* line 32, ../scss/module/_homepage.scss */
+.homepage .title--summer {
+  font-size: 52.8px;
+  line-height: 0.6em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 32, ../scss/module/_homepage.scss */
+  .homepage .title--summer {
+    font-size: 47.52px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 32, ../scss/module/_homepage.scss */
+  .homepage .title--summer {
+    font-size: 26.4px;
+  }
+}
+/* line 36, ../scss/module/_homepage.scss */
+.homepage .title--masquerade {
+  font-size: 80px;
+  line-height: 0.6em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 36, ../scss/module/_homepage.scss */
+  .homepage .title--masquerade {
+    font-size: 72px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 36, ../scss/module/_homepage.scss */
+  .homepage .title--masquerade {
+    font-size: 40px;
+  }
+}
+/* line 40, ../scss/module/_homepage.scss */
+.homepage .title--ball {
+  font-size: 16px;
+  line-height: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 40, ../scss/module/_homepage.scss */
+  .homepage .title--ball {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 40, ../scss/module/_homepage.scss */
+  .homepage .title--ball {
+    font-size: 8px;
+  }
+}
+/* line 44, ../scss/module/_homepage.scss */
+.homepage .title--date {
+  font-size: 96px;
+  line-height: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 44, ../scss/module/_homepage.scss */
+  .homepage .title--date {
+    font-size: 86.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 44, ../scss/module/_homepage.scss */
+  .homepage .title--date {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, ../scss/module/_homepage.scss */
+  .homepage {
+    width: 100%;
+  }
+}
+
+/* line 56, ../scss/module/_homepage.scss */
+.homepage__links {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 60, ../scss/module/_homepage.scss */
+.homepage__links li {
+  padding: 40px 0 0 80px;
+  margin: 0;
+  text-align: center;
+  float: left;
+  display: block;
+  font-size: 32px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 60, ../scss/module/_homepage.scss */
+  .homepage__links li {
+    font-size: 28.8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 60, ../scss/module/_homepage.scss */
+  .homepage__links li {
+    font-size: 16px;
+  }
+}
+/* line 67, ../scss/module/_homepage.scss */
+.homepage__links li a, .homepage__links li a:active, .homepage__links li a:visited {
+  color: #111111;
+  transition: color 0.5s;
+}
+/* line 71, ../scss/module/_homepage.scss */
+.homepage__links li a:hover {
+  color: #dddddd;
+}
+/* line 74, ../scss/module/_homepage.scss */
+.homepage__links li h4 {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 74, ../scss/module/_homepage.scss */
+  .homepage__links li h4 {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 74, ../scss/module/_homepage.scss */
+  .homepage__links li h4 {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 60, ../scss/module/_homepage.scss */
+  .homepage__links li {
+    padding-left: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 60, ../scss/module/_homepage.scss */
+  .homepage__links li {
+    padding: 32px 0 0 0;
+    float: none;
+    font-size: 25.6px;
+  }
+}
+/* line 88, ../scss/module/_homepage.scss */
+.homepage__links li:first-child {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 93, ../scss/module/_homepage.scss */
+  .link-trailer, .link-more-info {
+    display: none;
+  }
+}
+
+/* line 99, ../scss/module/_homepage.scss */
+.link-trailer--mob, .link-more-info--mob {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  /* line 99, ../scss/module/_homepage.scss */
+  .link-trailer--mob, .link-more-info--mob {
+    display: inline;
+  }
+}
+
+/*------------------------------------*\
+    MODULE/ICON-LINKS.SCSS
+\*------------------------------------*/
+/* line 5, ../scss/module/_icon-links.scss */
+.icon-links {
+  position: absolute;
+  top: 60%;
+  width: 90%;
+  left: 10%;
 }
 
 /*------------------------------------*\
