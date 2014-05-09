@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    MODULES/TRAILER.SCSS
+\*------------------------------------*/
+
+.trailer {
+    @extend .page-constrained;
+    padding: 0;
+}
+
+.trailer__wrapper {
+    @extend .wrapper;
+    background: url(../img/video-thumbnail.jpg) no-repeat center center;
+    background-size: cover;  
+}
+
+
+.trailer__link {
+    height: 331px;
+    width: 100%;
+    display: block;
+}

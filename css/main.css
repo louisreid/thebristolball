@@ -611,19 +611,19 @@ p {
     LAYOUT/PAGE.SCSS
 \*------------------------------------*/
 /* line 5, ../scss/layout/_page.scss */
-.wrapper, .home__wrapper, .more-info__wrapper, .social__wrapper, .tickets-bar__wrapper {
+.wrapper, .home__wrapper, .more-info__wrapper, .social__wrapper, .tickets-bar__wrapper, .trailer__wrapper {
   width: 100%;
 }
 
 /* line 9, ../scss/layout/_page.scss */
-.page-constrained, .tickets, .home__header, .more-info, .social, .tickets-bar {
+.page-constrained, .tickets, .home__header, .more-info, .social, .tickets-bar, .trailer {
   margin: 0 auto;
   padding: 20px;
   max-width: 1025px;
 }
 @media only screen and (max-width: 767px) {
   /* line 9, ../scss/layout/_page.scss */
-  .page-constrained, .tickets, .home__header, .more-info, .social, .tickets-bar {
+  .page-constrained, .tickets, .home__header, .more-info, .social, .tickets-bar, .trailer {
     padding: 10px;
   }
 }
@@ -1061,8 +1061,14 @@ p {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 960px) {
   /* line 55, ../scss/module/_social.scss */
+  .social__facebook img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 60, ../scss/module/_social.scss */
   .social__facebook img {
     width: 100%;
   }
@@ -1071,30 +1077,56 @@ p {
 /*------------------------------------*\
     MODULES/TICKETS-BAR.SCSS
 \*------------------------------------*/
-/* line 9, ../scss/module/_tickets-bar.scss */
+/* line 5, ../scss/module/_tickets-bar.scss */
+.tickets-bar {
+  padding: 40px;
+}
+
+/* line 10, ../scss/module/_tickets-bar.scss */
 .tickets-bar__wrapper {
   background-color: #111111;
 }
 
-/* line 14, ../scss/module/_tickets-bar.scss */
+/* line 15, ../scss/module/_tickets-bar.scss */
 .tickets-bar__cta {
   text-align: center;
   font-weight: 300;
   line-height: 0.9em;
 }
-/* line 17, ../scss/module/_tickets-bar.scss */
+/* line 18, ../scss/module/_tickets-bar.scss */
 .tickets-bar__cta a, .tickets-bar__cta a:active, .tickets-bar__cta a:visited {
   color: #eeeeee;
   transition: color 0.5s;
 }
-/* line 21, ../scss/module/_tickets-bar.scss */
+/* line 22, ../scss/module/_tickets-bar.scss */
 .tickets-bar__cta a:hover {
   color: #dddddd;
   text-decoration: none;
 }
-/* line 26, ../scss/module/_tickets-bar.scss */
+/* line 27, ../scss/module/_tickets-bar.scss */
 .tickets-bar__cta .tickets-bar__cta--sub {
   font-size: 16px;
+}
+
+/*------------------------------------*\
+    MODULES/TRAILER.SCSS
+\*------------------------------------*/
+/* line 5, ../scss/module/_trailer.scss */
+.trailer {
+  padding: 0;
+}
+
+/* line 10, ../scss/module/_trailer.scss */
+.trailer__wrapper {
+  background: url(../img/video-thumbnail.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 17, ../scss/module/_trailer.scss */
+.trailer__link {
+  height: 331px;
+  width: 100%;
+  display: block;
 }
 
 /*------------------------------------*\

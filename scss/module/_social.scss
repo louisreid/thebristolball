@@ -51,6 +51,11 @@
 
 .social__facebook {
     @extend .social__block;
+    @include breakpoint(tab){
+        img {
+            width: 100%;
+        }
+    }
     @include breakpoint(mob){
         img {
             width: 100%;

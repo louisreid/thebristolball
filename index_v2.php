@@ -32,6 +32,18 @@ Template Name: Home
     </section>
 </div>
 
+<div class="trailer__wrapper">
+    <section class="trailer">
+        <a class="link-trailer fancybox-media" href="https://vimeo.com/93543341" rel="media-gallery">
+            <span class="trailer__link"></span>
+        </a>
+        <a class="link-trailer--mob" href="https://vimeo.com/93543341">
+            <span class="trailer__link"></span>
+        </a>
+    </section>
+</div>
+
+
 <div class="social__wrapper">
     <section class="social">
         <div class="social__block__wrapper">

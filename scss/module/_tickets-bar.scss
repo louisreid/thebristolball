@@ -4,6 +4,7 @@
 
 .tickets-bar {
     @extend .page-constrained;
+    padding: 2*$gutter-std;
 }
 
 .tickets-bar__wrapper {
