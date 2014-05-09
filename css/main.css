@@ -40,6 +40,7 @@
  * Correct `block` display not defined in IE 8/9.
  */
 @import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:900italic);
 /* line 34, ../scss/base/_reset.scss */
 article,
 aside,
@@ -511,6 +512,7 @@ h1, h2, h3, h4, h5, h6 {
  * Google Webfonts
  */
 /* Abril Fatface */
+/* Playfair Displace SC */
 /*------------------------------------*\
     BASE/MIXINS.SCSS
 \*------------------------------------*/
@@ -528,9 +530,11 @@ h1, h2, h3, h4, h5, h6 {
  * thanks to: nicolasgallagher.com
  */
 /* line 11, ../scss/base/_extends.scss */
-.cf:before, .homepage__links:before,
+.cf:before, .homepage__links:before, .more-info:before, .social:before,
 .cf:after,
-.homepage__links:after {
+.homepage__links:after,
+.more-info:after,
+.social:after {
   content: " ";
   /* 1 */
   display: table;
@@ -538,7 +542,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 16, ../scss/base/_extends.scss */
-.cf:after, .homepage__links:after {
+.cf:after, .homepage__links:after, .more-info:after, .social:after {
   clear: both;
 }
 
@@ -547,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 24, ../scss/base/_extends.scss */
-.cf, .homepage__links {
+.cf, .homepage__links, .more-info, .social {
   *zoom: 1;
 }
 
@@ -555,7 +559,7 @@ h1, h2, h3, h4, h5, h6 {
  * Visually Hidden from H5 BP
  */
 /* line 32, ../scss/base/_extends.scss */
-.visuallyhidden, .homepage h1 {
+.visuallyhidden, .hidden, .homepage h1 {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -582,9 +586,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Abril Fatface', Georgia, serif;
 }
 
-/* line 14, ../scss/base/_typography.scss */
+/* line 13, ../scss/base/_typography.scss */
+.font-header-sub {
+  font-family: 'Playfair Display SC', Georgia, serif;
+}
+
+/* line 18, ../scss/base/_typography.scss */
 h1, h2, h3, h4 {
   font-weight: 300;
+}
+
+/* line 23, ../scss/base/_typography.scss */
+p {
+  padding-bottom: 4px;
 }
 
 /*------------------------------------*\
@@ -597,19 +611,19 @@ h1, h2, h3, h4 {
     LAYOUT/PAGE.SCSS
 \*------------------------------------*/
 /* line 5, ../scss/layout/_page.scss */
-.wrapper {
+.wrapper, .home__wrapper, .more-info__wrapper, .social__wrapper, .tickets-bar__wrapper {
   width: 100%;
 }
 
 /* line 9, ../scss/layout/_page.scss */
-.page-constrained, .tickets {
+.page-constrained, .tickets, .home__header, .more-info, .social, .tickets-bar {
   margin: 0 auto;
   padding: 20px;
   max-width: 1025px;
 }
 @media only screen and (max-width: 767px) {
   /* line 9, ../scss/layout/_page.scss */
-  .page-constrained, .tickets {
+  .page-constrained, .tickets, .home__header, .more-info, .social, .tickets-bar {
     padding: 10px;
   }
 }
@@ -624,7 +638,7 @@ h1, h2, h3, h4 {
 .tickets {
   margin: 0 auto;
   max-width: 800px;
-  background-color: white;
+  background-color: #eeeeee;
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   /* line 5, ../scss/module/_tickets.scss */
@@ -667,7 +681,7 @@ h1, h2, h3, h4 {
 }
 
 /* line 18, ../scss/module/_big-video.scss */
-.wrapper {
+.container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -694,6 +708,116 @@ h1, h2, h3, h4 {
 /*------------------------------------*\
     MODULE/TITLE.SCSS
 \*------------------------------------*/
+/* line 6, ../scss/module/_title.scss */
+.title--the {
+  font-size: 28.8px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 6, ../scss/module/_title.scss */
+  .title--the {
+    font-size: 25.92px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 6, ../scss/module/_title.scss */
+  .title--the {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 6, ../scss/module/_title.scss */
+  .title--the {
+    display: block;
+    margin-bottom: -6.4px;
+  }
+}
+
+/* line 14, ../scss/module/_title.scss */
+.title--summer {
+  font-size: 52.8px;
+  line-height: 0.6em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 14, ../scss/module/_title.scss */
+  .title--summer {
+    font-size: 47.52px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, ../scss/module/_title.scss */
+  .title--summer {
+    font-size: 26.4px;
+  }
+}
+
+/* line 19, ../scss/module/_title.scss */
+.title--masquerade {
+  font-size: 80px;
+  line-height: 0.6em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 19, ../scss/module/_title.scss */
+  .title--masquerade {
+    font-size: 72px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 19, ../scss/module/_title.scss */
+  .title--masquerade {
+    font-size: 40px;
+  }
+}
+
+/* line 24, ../scss/module/_title.scss */
+.title--ball {
+  font-size: 16px;
+  line-height: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 24, ../scss/module/_title.scss */
+  .title--ball {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 24, ../scss/module/_title.scss */
+  .title--ball {
+    font-size: 8px;
+  }
+}
+
+/* line 29, ../scss/module/_title.scss */
+.title--date {
+  font-size: 96px;
+  line-height: 2em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 29, ../scss/module/_title.scss */
+  .title--date {
+    font-size: 86.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 29, ../scss/module/_title.scss */
+  .title--date {
+    font-size: 48px;
+  }
+}
+
+/*------------------------------------*\
+    MODULE/ICON-LINKS.SCSS
+\*------------------------------------*/
+/* line 5, ../scss/module/_icon-links.scss */
+.icon-links {
+  position: absolute;
+  top: 60%;
+  width: 90%;
+  left: 10%;
+}
+
+/*------------------------------------*\
+    MODULE/HOMEPAGE.SCSS
+\*------------------------------------*/
 /* line 6, ../scss/module/_homepage.scss */
 .homepage__wrapper {
   position: absolute;
@@ -709,97 +833,6 @@ h1, h2, h3, h4 {
   text-align: center;
   color: #111111;
 }
-/* line 25, ../scss/module/_homepage.scss */
-.homepage .title--the {
-  font-size: 28.8px;
-}
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 25, ../scss/module/_homepage.scss */
-  .homepage .title--the {
-    font-size: 25.92px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 25, ../scss/module/_homepage.scss */
-  .homepage .title--the {
-    font-size: 14.4px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 25, ../scss/module/_homepage.scss */
-  .homepage .title--the {
-    display: block;
-    margin-bottom: -6.4px;
-  }
-}
-/* line 32, ../scss/module/_homepage.scss */
-.homepage .title--summer {
-  font-size: 52.8px;
-  line-height: 0.6em;
-}
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 32, ../scss/module/_homepage.scss */
-  .homepage .title--summer {
-    font-size: 47.52px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 32, ../scss/module/_homepage.scss */
-  .homepage .title--summer {
-    font-size: 26.4px;
-  }
-}
-/* line 36, ../scss/module/_homepage.scss */
-.homepage .title--masquerade {
-  font-size: 80px;
-  line-height: 0.6em;
-}
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 36, ../scss/module/_homepage.scss */
-  .homepage .title--masquerade {
-    font-size: 72px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 36, ../scss/module/_homepage.scss */
-  .homepage .title--masquerade {
-    font-size: 40px;
-  }
-}
-/* line 40, ../scss/module/_homepage.scss */
-.homepage .title--ball {
-  font-size: 16px;
-  line-height: 2em;
-}
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 40, ../scss/module/_homepage.scss */
-  .homepage .title--ball {
-    font-size: 14.4px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 40, ../scss/module/_homepage.scss */
-  .homepage .title--ball {
-    font-size: 8px;
-  }
-}
-/* line 44, ../scss/module/_homepage.scss */
-.homepage .title--date {
-  font-size: 96px;
-  line-height: 2em;
-}
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 44, ../scss/module/_homepage.scss */
-  .homepage .title--date {
-    font-size: 86.4px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 44, ../scss/module/_homepage.scss */
-  .homepage .title--date {
-    font-size: 48px;
-  }
-}
 @media only screen and (max-width: 767px) {
   /* line 14, ../scss/module/_homepage.scss */
   .homepage {
@@ -807,12 +840,12 @@ h1, h2, h3, h4 {
   }
 }
 
-/* line 56, ../scss/module/_homepage.scss */
+/* line 34, ../scss/module/_homepage.scss */
 .homepage__links {
   list-style-type: none;
   display: inline-block;
 }
-/* line 60, ../scss/module/_homepage.scss */
+/* line 38, ../scss/module/_homepage.scss */
 .homepage__links li {
   padding: 40px 0 0 80px;
   margin: 0;
@@ -822,88 +855,246 @@ h1, h2, h3, h4 {
   font-size: 32px;
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 60, ../scss/module/_homepage.scss */
+  /* line 38, ../scss/module/_homepage.scss */
   .homepage__links li {
     font-size: 28.8px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 60, ../scss/module/_homepage.scss */
+  /* line 38, ../scss/module/_homepage.scss */
   .homepage__links li {
     font-size: 16px;
   }
 }
-/* line 67, ../scss/module/_homepage.scss */
+/* line 45, ../scss/module/_homepage.scss */
 .homepage__links li a, .homepage__links li a:active, .homepage__links li a:visited {
   color: #111111;
   transition: color 0.5s;
 }
-/* line 71, ../scss/module/_homepage.scss */
+/* line 49, ../scss/module/_homepage.scss */
 .homepage__links li a:hover {
   color: #dddddd;
 }
-/* line 74, ../scss/module/_homepage.scss */
+/* line 52, ../scss/module/_homepage.scss */
 .homepage__links li h4 {
   font-size: 16px;
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 74, ../scss/module/_homepage.scss */
+  /* line 52, ../scss/module/_homepage.scss */
   .homepage__links li h4 {
     font-size: 14.4px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 74, ../scss/module/_homepage.scss */
+  /* line 52, ../scss/module/_homepage.scss */
   .homepage__links li h4 {
     font-size: 8px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  /* line 60, ../scss/module/_homepage.scss */
+  /* line 38, ../scss/module/_homepage.scss */
   .homepage__links li {
     padding-left: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 60, ../scss/module/_homepage.scss */
+  /* line 38, ../scss/module/_homepage.scss */
   .homepage__links li {
     padding: 32px 0 0 0;
     float: none;
     font-size: 25.6px;
   }
 }
-/* line 88, ../scss/module/_homepage.scss */
+/* line 66, ../scss/module/_homepage.scss */
 .homepage__links li:first-child {
   padding-left: 0;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 93, ../scss/module/_homepage.scss */
+  /* line 71, ../scss/module/_homepage.scss */
   .link-trailer, .link-more-info {
     display: none;
   }
 }
 
-/* line 99, ../scss/module/_homepage.scss */
+/* line 77, ../scss/module/_homepage.scss */
 .link-trailer--mob, .link-more-info--mob {
   display: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 99, ../scss/module/_homepage.scss */
+  /* line 77, ../scss/module/_homepage.scss */
   .link-trailer--mob, .link-more-info--mob {
     display: inline;
   }
 }
 
 /*------------------------------------*\
-    MODULE/ICON-LINKS.SCSS
+    MODULE/HOME.SCSS
 \*------------------------------------*/
-/* line 5, ../scss/module/_icon-links.scss */
-.icon-links {
-  position: absolute;
-  top: 60%;
-  width: 90%;
-  left: 10%;
+/* line 6, ../scss/module/_home.scss */
+.home__wrapper {
+  background-image: url(../img/bg-chorleywood.jpg);
+  background-position: no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 13, ../scss/module/_home.scss */
+.home__header {
+  padding-top: 10%;
+  text-align: center;
+}
+
+/* line 19, ../scss/module/_home.scss */
+.home__arrow-down {
+  padding-top: 20px;
+  width: 64px;
+}
+
+/*------------------------------------*\
+    MODULES/MORE-INFO.SCSS
+\*------------------------------------*/
+/* line 5, ../scss/module/_more-info.scss */
+.more-info__wrapper {
+  background-color: #111111;
+}
+
+/* line 10, ../scss/module/_more-info.scss */
+.more-info {
+  color: #eeeeee;
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, ../scss/module/_more-info.scss */
+  .more-info img {
+    width: 100%;
+  }
+}
+/* line 19, ../scss/module/_more-info.scss */
+.more-info h1 {
+  padding-bottom: 4px;
+}
+/* line 22, ../scss/module/_more-info.scss */
+.more-info a, .more-info a:visited, .more-info a:active {
+  color: #eeeeee;
+  transition: color 0.5s;
+}
+/* line 26, ../scss/module/_more-info.scss */
+.more-info a:hover {
+  color: #dddddd;
+}
+
+/* line 31, ../scss/module/_more-info.scss */
+.more-info__block, .more-info__what-to-expect, .more-info__location, .more-info__questions {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 31, ../scss/module/_more-info.scss */
+  .more-info__block, .more-info__what-to-expect, .more-info__location, .more-info__questions {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+/*------------------------------------*\
+    MODULES/SOCIAL.SCSS
+\*------------------------------------*/
+/* line 10, ../scss/module/_social.scss */
+.social__wrapper {
+  background-color: #4c252d;
+}
+
+/* line 15, ../scss/module/_social.scss */
+.social__block, .social__twitter, .social__facebook {
+  margin: 20px;
+  padding: 30px;
+  background-color: #111111;
+  background-color: rgba(17, 17, 17, 0.9);
+  text-align: center;
+  border-radius: 20px;
+}
+/* line 22, ../scss/module/_social.scss */
+.social__block h2, .social__twitter h2, .social__facebook h2 {
+  font-weight: 300;
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 25.6px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 22, ../scss/module/_social.scss */
+  .social__block h2, .social__twitter h2, .social__facebook h2 {
+    font-size: 23.04px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 22, ../scss/module/_social.scss */
+  .social__block h2, .social__twitter h2, .social__facebook h2 {
+    font-size: 12.8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 22, ../scss/module/_social.scss */
+  .social__block h2, .social__twitter h2, .social__facebook h2 {
+    font-size: 17.6px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 15, ../scss/module/_social.scss */
+  .social__block, .social__twitter, .social__facebook {
+    border-radius: 0;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* line 40, ../scss/module/_social.scss */
+.social__block__wrapper {
+  float: left;
+  width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 40, ../scss/module/_social.scss */
+  .social__block__wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 55, ../scss/module/_social.scss */
+  .social__facebook img {
+    width: 100%;
+  }
+}
+
+/*------------------------------------*\
+    MODULES/TICKETS-BAR.SCSS
+\*------------------------------------*/
+/* line 9, ../scss/module/_tickets-bar.scss */
+.tickets-bar__wrapper {
+  background-color: #111111;
+}
+
+/* line 14, ../scss/module/_tickets-bar.scss */
+.tickets-bar__cta {
+  text-align: center;
+  font-weight: 300;
+  line-height: 0.9em;
+}
+/* line 17, ../scss/module/_tickets-bar.scss */
+.tickets-bar__cta a, .tickets-bar__cta a:active, .tickets-bar__cta a:visited {
+  color: #eeeeee;
+  transition: color 0.5s;
+}
+/* line 21, ../scss/module/_tickets-bar.scss */
+.tickets-bar__cta a:hover {
+  color: #dddddd;
+  text-decoration: none;
+}
+/* line 26, ../scss/module/_tickets-bar.scss */
+.tickets-bar__cta .tickets-bar__cta--sub {
+  font-size: 16px;
 }
 
 /*------------------------------------*\

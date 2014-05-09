@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    MODULE/TITLE.SCSS
+    MODULE/HOMEPAGE.SCSS
 \*------------------------------------*/
 
 
@@ -22,29 +22,6 @@
         @extend .visuallyhidden;
     }
     
-    .title--the {
-        @include font-sizing(1.8*$font-size);
-        @include breakpoint(mob){
-            display: block;
-            margin-bottom: -0.4*$base-unit;
-        }
-    }
-    .title--summer {
-        @include font-sizing(3.3*$font-size);
-        line-height: 0.6em;
-    }
-    .title--masquerade {
-        @include font-sizing(5*$font-size);
-        line-height: 0.6em;
-    }
-    .title--ball {
-        @include font-sizing(1*$font-size);
-        line-height: 2em;
-    }
-    .title--date {
-        @include font-sizing(6*$font-size);
-        line-height: 2em;
-    }
 
     @include breakpoint(mob){
         width: 100%;
@@ -52,6 +29,7 @@
 
 
 }
+
 
 .homepage__links {
     @extend .cf;

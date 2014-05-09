@@ -10,8 +10,16 @@
     font-family: 'Abril Fatface', Georgia, serif;   
 }
 
+.font-header-sub {
+    font-family: 'Playfair Display SC', Georgia, serif;   
+}
+
 
 h1, h2, h3, h4 {
     @extend .font-header;
     font-weight: 300;
+}
+
+p {
+    padding-bottom: 0.2*$gutter-std;
 }

@@ -59,7 +59,7 @@
         }
             
         (Modernizr.csstransitions)?
-            $('.wrapper').transit(
+            $('.container').transit(
                 {'left':'-'+(100*(screenIndex-1))+'%'},
                 transitionDur,
                 onTransitionComplete):

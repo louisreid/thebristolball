@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    MODULES/TICKETS-BAR.SCSS
+\*------------------------------------*/
+
+.tickets-bar {
+    @extend .page-constrained;
+}
+
+.tickets-bar__wrapper {
+    @extend .wrapper;
+    background-color: $black;
+}
+
+.tickets-bar__cta {
+    text-align: center;
+    font-weight: 300;
+    a, a:active, a:visited {
+        color: $white;
+        transition: color 0.5s;
+    }
+    a:hover {
+        color: $silver;
+        text-decoration: none;
+    }
+    line-height: 0.9em;
+    .tickets-bar__cta--sub {
+        font-size: $font-size;
+    }
+}
+
+

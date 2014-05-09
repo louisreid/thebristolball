@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    MODULES/MORE-INFO.SCSS
+\*------------------------------------*/
+
+.more-info__wrapper {
+    @extend .wrapper;
+    background-color: $black;
+}
+
+.more-info {
+    @extend .page-constrained;
+    @extend .cf;
+    color: $white;
+    img {
+        @include breakpoint(mob){
+            width: 100%;
+        }
+    }
+    h1 {
+        padding-bottom: 0.2*$gutter-std;
+    }
+    a, a:visited, a:active {
+        color: $white;
+        transition: color 0.5s;
+    }
+    a:hover {
+        color: $silver;
+    }
+}
+
+.more-info__block {
+    float: left;
+    width: 50%;
+    padding: $gutter-std;
+    @include breakpoint(mob){
+        padding: $gutter-mob;
+        width: 100%;
+    }
+}
+
+.more-info__what-to-expect {
+    @extend .more-info__block;
+}
+
+.more-info__location {
+    @extend .more-info__block;
+}
+
+.more-info__questions {
+    @extend .more-info__block;
+}

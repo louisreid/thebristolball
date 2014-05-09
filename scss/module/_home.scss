@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    MODULE/HOME.SCSS
+\*------------------------------------*/
+
+
+.home__wrapper {
+    @extend .wrapper;
+    background-image: url(../img/bg-chorleywood.jpg);
+    background-position: no-repeat center center fixed;
+    background-size: cover;  
+}
+
+.home__header {
+    @extend .page-constrained;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.home__arrow-down {
+    padding-top: $gutter-std;
+    width: 4*$base-unit;
+}
+

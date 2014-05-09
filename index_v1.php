@@ -37,7 +37,7 @@
         </section> 
     </div>
 
-    <div class="wrapper">
+    <div class="container">
         <div class="screen" id="screen" data-video="<?php echo get_template_directory_uri(); ?>/video/bg-video.mp4">
             <img src="<?php echo get_template_directory_uri(); ?>/img/video.jpg" class="big-image" />
         </div>

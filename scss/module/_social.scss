@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    MODULES/SOCIAL.SCSS
+\*------------------------------------*/
+
+.social {
+    @extend .page-constrained;
+    @extend .cf;
+}
+
+.social__wrapper {
+    @extend .wrapper;
+    background-color: $purple;
+}
+
+.social__block {
+    margin: $gutter-std;
+    padding: 1.5*$gutter-std;
+    background-color: $black;
+    background-color: rgba($black,0.9);
+    text-align: center;
+    border-radius: $gutter-std;
+    h2 {
+        font-weight: 300;
+        color: $white;
+        text-transform: uppercase;
+        @include font-sizing(1.6*$font-size);
+        padding-bottom: $gutter-mob;
+        text-align: left;
+        @include breakpoint(mob){
+            font-size: 1.1*$font-size;
+        }
+    }
+    @include breakpoint(mob){
+        border-radius: 0;
+        margin: 0;
+        padding: $gutter-mob;
+    }
+}
+
+.social__block__wrapper {
+    float: left;
+    width: 50%;
+    @include breakpoint(mob){
+        width: 100%;
+    }
+}
+
+.social__twitter {
+    @extend .social__block;
+}
+
+.social__facebook {
+    @extend .social__block;
+    @include breakpoint(mob){
+        img {
+            width: 100%;
+        }
+    }
+}
