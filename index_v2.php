@@ -24,9 +24,9 @@ Template Name: Home
 <div class="tickets-bar__wrapper">
     <section class="tickets-bar">
         <h1 class="tickets-bar__cta">
-            <a class="tickets-bar__cta--link" href="https://thebristolball.wufoo.eu/forms/early-bird-tickets/">
-                BUY EARLY BIRD TICKETS NOW<br>
-                <span class="tickets-bar__cta--sub">AVAILABLE UNTIL MIDNIGHT SUNDAY</span>
+            <a class="tickets-bar__cta--link" href="https://thebristolball.wufoo.eu/forms/the-summer-masquerade/">
+                TICKETS NOW AVAILABLE<br>
+                <span class="tickets-bar__cta--sub">BUY FIVE TICKETS FOR A 10% DISCOUNT</span>
             </a>
         </h1>
     </section>
