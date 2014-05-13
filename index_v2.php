@@ -69,9 +69,10 @@ Template Name: Home
         <div class="more-info__what-to-expect">
             <h1>WHAT TO EXPECT:</h1>
             <p>The Summer Masquerade is Bristol’s biggest EVER charity ball in aid of Bristol charity Unseen.</p>
-            <p>On entry you will be greeted with a glass of champagne, complimented by some delicious canapés in the station’s very own bar-café.</p>
-            <p>There will be a large open space at the back of the venue as well as the main performance area with a stage to enjoy the live band and DJ sets.</p>
+            <p>On entry you will be greeted with a glass of champagne, complemented by some delicious canapés in The Station’s very own bar-café.</p>
+            <p>There will be a large open space at the back of the venue as well as the main performance area with a stage to the set from Hot Pursuit, Bristols hottest cover band, and DJ sets.</p>
             <p>A photobooth will be open on the night for all your snaps with your friends, or perhaps some cheeky selfies? A photographer will also be there on the night to photograph you looking your best.</p>
+            <p>The courtyard will be a chilled place to catch up in the hazy evening sun whilst enjoying acoustic sets. Join the band and DJ sets in the main venue to celebrate finishing another year of uni.</p>
         </div> 
 
         <div class="more-info__location">
