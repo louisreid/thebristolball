@@ -13,7 +13,7 @@ Template Name: Home
             <span class="title--the">THE<br></span> 
             <span class="title--summer">SUMMER<br></span>
             <span class="title--masquerade">MASQUERADE<br></span>
-            <span class="title--ball">BRISTOLS BIGGEST EVER CHARITY BALL<br></span>
+            <span class="title--ball">BRISTOL&#8217;S BIGGEST EVER CHARITY BALL<br></span>
         </h2>
         <h2 class="title--date">30&nbsp;&nbsp;&nbsp;05</h2>
         <h2>THE STATION, <br>SILVER ST</h2>
@@ -70,9 +70,10 @@ Template Name: Home
             <h1>WHAT TO EXPECT:</h1>
             <p>The Summer Masquerade is Bristol’s biggest EVER charity ball in aid of Bristol charity Unseen.</p>
             <p>On entry you will be greeted with a glass of champagne, complemented by some delicious canapés in The Station’s very own bar-café.</p>
-            <p>There will be a large open space at the back of the venue as well as the main performance area with a stage to the set from Hot Pursuit, Bristols hottest cover band, and DJ sets.</p>
+            <p>There will be a bar, an outside courtyard, as well as the main performance area with a stage to the set from Hot Pursuit, Bristols hottest cover band, and DJ sets.</p>
             <p>A photobooth will be open on the night for all your snaps with your friends, or perhaps some cheeky selfies? A photographer will also be there on the night to photograph you looking your best.</p>
             <p>The courtyard will be a chilled place to catch up in the hazy evening sun whilst enjoying acoustic sets. Join the band and DJ sets in the main venue to celebrate finishing another year of uni.</p>
+            <p>All profits go to <a href="http://www.unseenuk.org/">Unseen.</a></p>
         </div> 
 
         <div class="more-info__location">
