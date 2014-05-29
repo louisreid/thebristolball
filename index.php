@@ -24,7 +24,7 @@ Template Name: Home
 <div class="tickets-bar__wrapper">
     <section class="tickets-bar">
         <h1 class="tickets-bar__cta">
-            <a class="tickets-bar__cta--link" href="https://thebristolball.wufoo.eu/forms/the-summer-masquerade/">
+            <a class="tickets-bar__cta--link" href="#">
                 TICKETS SALES NOW FINISHED<br>
                 <span class="tickets-bar__cta--sub">SEE YOU ON THE NIGHT</span>
             </a>
