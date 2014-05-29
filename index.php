@@ -21,17 +21,17 @@ Template Name: Home
     </header>
 </div>
 
-<!-- <div class="tickets-bar__wrapper">
+<div class="tickets-bar__wrapper">
     <section class="tickets-bar">
         <h1 class="tickets-bar__cta">
             <a class="tickets-bar__cta--link" href="https://thebristolball.wufoo.eu/forms/the-summer-masquerade/">
-                TICKETS NOW AVAILABLE<br>
-                <span class="tickets-bar__cta--sub">BUY FIVE TICKETS FOR A 10% DISCOUNT</span>
+                TICKETS SALES NOW FINISHED<br>
+                <span class="tickets-bar__cta--sub">SEE YOU ON THE NIGHT</span>
             </a>
         </h1>
     </section>
 </div>
- -->
+
 <div class="trailer__wrapper">
     <section class="trailer">
         <a class="link-trailer fancybox-media" href="https://vimeo.com/93543341" rel="media-gallery">
