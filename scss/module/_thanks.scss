@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    MODULE/THANKS.SCSS
+\*------------------------------------*/
+
+
+.thanks__wrapper {
+    @extend .wrapper;
+    background-color: $white;
+}
+
+.thanks__header {
+    @extend .page-constrained;
+    padding-top: 10%;
+    text-align: center;
+}
+
+

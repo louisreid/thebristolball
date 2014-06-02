@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    MODULE/POEM.SCSS
+\*------------------------------------*/
+
+
+.poem__wrapper {
+    @extend .wrapper;
+}
+
+.poem {
+    color: $black;
+    @extend .font-poem;
+}
