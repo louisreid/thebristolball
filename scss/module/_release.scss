@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    MODULE/RELEASE.SCSS
+\*------------------------------------*/
+
+.release__wrapper {
+    @extend .wrapper;
+    img {
+        width: 100%;
+    }
+}
+
+.release {
+    @extend .page-constrained;
+    padding-top: 3*$base-unit;
+    padding-bottom: 5*$base-unit;
+    text-align: center;
+    > h2 {
+        margin-bottom: 4*$base-unit;
+    }
+}
+
+.release__title--thank-you {
+    @include font-sizing(10*$font-size);
+    line-height: 1em;
+}
+.release__title--somuch {
+    @include font-sizing(4*$font-size);
+    line-height: 1em;
+}

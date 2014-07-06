@@ -532,11 +532,12 @@ h1, h2, h3, h4, h5, h6 {
  * thanks to: nicolasgallagher.com
  */
 /* line 11, ../scss/base/_extends.scss */
-.cf:before, .homepage__links:before, .more-info:before, .social:before,
+.cf:before, .homepage__links:before, .more-info:before, .social:before, .facebook-album:before,
 .cf:after,
 .homepage__links:after,
 .more-info:after,
-.social:after {
+.social:after,
+.facebook-album:after {
   content: " ";
   /* 1 */
   display: table;
@@ -544,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 16, ../scss/base/_extends.scss */
-.cf:after, .homepage__links:after, .more-info:after, .social:after {
+.cf:after, .homepage__links:after, .more-info:after, .social:after, .facebook-album:after {
   clear: both;
 }
 
@@ -553,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 24, ../scss/base/_extends.scss */
-.cf, .homepage__links, .more-info, .social {
+.cf, .homepage__links, .more-info, .social, .facebook-album {
   *zoom: 1;
 }
 
@@ -618,19 +619,19 @@ p {
     LAYOUT/PAGE.SCSS
 \*------------------------------------*/
 /* line 5, ../scss/layout/_page.scss */
-.wrapper, .home__wrapper, .thanks__wrapper, .more-info__wrapper, .social__wrapper, .tickets-bar__wrapper, .trailer__wrapper {
+.wrapper, .home__wrapper, .thanks__wrapper, .more-info__wrapper, .social__wrapper, .tickets-bar__wrapper, .trailer__wrapper, .release__wrapper {
   width: 100%;
 }
 
 /* line 9, ../scss/layout/_page.scss */
-.page-constrained, .tickets, .home__header, .thanks__header, .more-info, .social, .tickets-bar, .trailer {
+.page-constrained, .tickets, .home__header, .thanks__header, .more-info, .social, .tickets-bar, .trailer, .release {
   margin: 0 auto;
   padding: 20px;
   max-width: 1025px;
 }
 @media only screen and (max-width: 767px) {
   /* line 9, ../scss/layout/_page.scss */
-  .page-constrained, .tickets, .home__header, .thanks__header, .more-info, .social, .tickets-bar, .trailer {
+  .page-constrained, .tickets, .home__header, .thanks__header, .more-info, .social, .tickets-bar, .trailer, .release {
     padding: 10px;
   }
 }
@@ -1148,6 +1149,118 @@ p {
   height: 331px;
   width: 100%;
   display: block;
+}
+
+/*------------------------------------*\
+    MODULE/RELEASE.SCSS
+\*------------------------------------*/
+/* line 7, ../scss/module/_release.scss */
+.release__wrapper img {
+  width: 100%;
+}
+
+/* line 12, ../scss/module/_release.scss */
+.release {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+/* line 17, ../scss/module/_release.scss */
+.release > h2 {
+  margin-bottom: 64px;
+}
+
+/* line 22, ../scss/module/_release.scss */
+.release__title--thank-you {
+  font-size: 160px;
+  line-height: 1em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 22, ../scss/module/_release.scss */
+  .release__title--thank-you {
+    font-size: 144px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 22, ../scss/module/_release.scss */
+  .release__title--thank-you {
+    font-size: 80px;
+  }
+}
+
+/* line 26, ../scss/module/_release.scss */
+.release__title--somuch {
+  font-size: 64px;
+  line-height: 1em;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 26, ../scss/module/_release.scss */
+  .release__title--somuch {
+    font-size: 57.6px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 26, ../scss/module/_release.scss */
+  .release__title--somuch {
+    font-size: 32px;
+  }
+}
+
+/*------------------------------------*\
+    MODULE/FACEBOOK-ALBUM.SCSS
+\*------------------------------------*/
+/* line 7, ../scss/module/_facebook-album.scss */
+.facebook-album a {
+  border: none;
+  display: block;
+  color: #111111;
+}
+/* line 11, ../scss/module/_facebook-album.scss */
+.facebook-album a:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+/* line 17, ../scss/module/_facebook-album.scss */
+.facebook-album a:visited {
+  color: #111111;
+}
+/* line 20, ../scss/module/_facebook-album.scss */
+.facebook-album a h2 {
+  font-size: 48px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 20, ../scss/module/_facebook-album.scss */
+  .facebook-album a h2 {
+    font-size: 43.2px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 20, ../scss/module/_facebook-album.scss */
+  .facebook-album a h2 {
+    font-size: 24px;
+  }
+}
+/* line 22, ../scss/module/_facebook-album.scss */
+.facebook-album a h2 span {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 22, ../scss/module/_facebook-album.scss */
+  .facebook-album a h2 span {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 22, ../scss/module/_facebook-album.scss */
+  .facebook-album a h2 span {
+    font-size: 8px;
+  }
+}
+/* line 26, ../scss/module/_facebook-album.scss */
+.facebook-album a img {
+  width: 100%;
 }
 
 /*------------------------------------*\

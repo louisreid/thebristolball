@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    MODULE/FACEBOOK-ALBUM.SCSS
+\*------------------------------------*/
+
+.facebook-album {
+    @extend .cf;
+    a {
+        border: none;
+        display: block;
+        color: $black;
+        &:hover {
+            opacity: 0.7;
+            transition: all 0.3s ease-in-out;
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-backface-visibility: hidden;
+        }
+        &:visited {
+            color: $black;    
+        }
+        h2 {
+            @include font-sizing(3*$font-size);
+            span {
+                @include font-sizing(1*$font-size);
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
